@@ -31,7 +31,7 @@ def ocr_function(filename):
     # Grab the ID from the URL
     operation_id = read_operation_location.split("/")[-1]
     
-    message =  " Ta karma jest odpowiednia, dobry wybór!"
+    message = ""
     
     message_wrong = "Nie kupuj tej karmy, nie jest ona dobra dla piesków! "
     

@@ -23,14 +23,14 @@
                     <div class="row">
                         <header>
                             <h1 class="text-center">Przeanalizuj skład karmy dla psiaków</h1>
-                            <p class="text-center">Skorzystaj z naszego analizatora coś tam, ale zapytaj schroniska coś tam...</p>
+                            <p class="text-center">Jeśli masz możliwość skontaktuj się ze schroniskiem, oni najlepiej wiedzą czego potrzebują. Jeśli jednak nie masz takiej możliwości skorzystaj z naszego analizatora.</p>
                         </header>
                     </div>
                     <div class="row d-flex justify-content-center">
                         <div class="col-4 p-3 fileIn">
                             {% if filename %}
                                 <img class="img-fluid" src="{{ url_for('display_image', filename=filename) }}">
-                            {% else %}}
+                            {% else %}
                                 <img class="img-fluid" src="{{ url_for('static',filename='images/dog.jpg') }}" atl="piesek"/>
                             {% endif %}
 
@@ -41,21 +41,26 @@
                         </div>
                         <div class="col-7 result">
                             <div class="adnotacje">
+                                {% with messages = get_flashed_messages() %}
+                                {% if messages %}
+                                    {% for message in messages %}
+                                    {{ message }}
+                                    {% endfor %}
+                                {% endif %}
+                                {% endwith %}
                                 <h3>Wynik analizy:</h3>
-                                    {% with messages = get_flashed_messages() %}
-                                        {% if messages %}
-                                    <ul>
-                                        {% for message in messages %}
-                                        <li>{{ message }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                    {% endif %}
-                                    {% endwith %}
-                            </div>
 
-                            <div class="wynik bg-success bg-gradient text-white">
+                            </div>
+                            {% if is_good == True %}
+                                <div class="wynik bg-success bg-gradient text-white">
+                                    <h4> {{ message }} </h4>
+                                </div>
+                            {% elif is_good == False %}
+                            <div class="wynik bg-danger bg-gradient text-white">
                                 <h4> {{ message }} </h4>
                             </div>
+                            {% endif %}
+
                         </div>
                     </div>
                 </div>

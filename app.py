@@ -33,12 +33,10 @@ def upload_image():
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        print(filename)
-        message = ocr_function(filename)[0]
-        print(message)
+        message, is_good = ocr_function(filename)
         # print('upload_image filename: ' + filename)
-        flash('Image successfully uploaded and displayed below')
-        return render_template('index.html', filename=filename, message=message)
+        flash('Image successfully uploaded')
+        return render_template('index.html', filename=filename, message=message, is_good=is_good)
     else:
         flash('Allowed image types are -> png, jpg, jpeg, gif')
         return redirect(request.url)
@@ -46,16 +44,12 @@ def upload_image():
 
 @app.route('/display/<filename>')
 def display_image(filename):
-    print("jestem tuuuu")
     # print('display_image filename: ' + filename)
     return redirect(url_for('static', filename='uploads/' + filename), code=301)
 
 
 @app.route('/ocr<filename>')
 def ocr(filename):
-    print(filename)
-    given_url = "https://scontent-vie1-1.xx.fbcdn.net/v/t1.15752-9/256775408_3140666182820284_8243182282827745946_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_ohc=aJ6GnagHtvYAX8JEq9e&_nc_ht=scontent-vie1-1.xx&oh=d80b7aa9d7e69abc2357225cb44d57db&oe=61BF7429"
-
     message = ocr_function()
     return render_template("index.html", message=message)
 
