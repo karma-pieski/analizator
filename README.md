@@ -23,7 +23,7 @@ Projekt miał na celu stworzenie analizatora składu karmy dla psów. Powstał, 
 
 * Martyna Jakubowska: https://github.com/mjakubowska
 * Aleksandra Kowalczyk: https://github.com/Olakow
-
+https://youtu.be/XHffBHFIBww
 ## Opis funkcjonalności: 
 
 * Użytkownik wchodzi na stronę <<ta strona>>
