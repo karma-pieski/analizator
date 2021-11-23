@@ -38,7 +38,7 @@ https://youtu.be/XHffBHFIBww
 * Program wyświetla informacje, czy karma jest odpowiednia dla psiaków czy lepiej jej unikać
 
 
-## Prezentacja działania rozwiązania
+## Prezentacja działania rozwiązania:
 
 1. Aplikacja webowa została napisana przy użyciu frameworka Flask.
 	
@@ -54,7 +54,7 @@ https://youtu.be/XHffBHFIBww
 i wywoływujemy na nic OCR. Po przeanalizowaniu składu karmy, analizator decyduje, czy karma spełnia warunki do zakwalifikowania się do dobrego składu karmy czy wręcz przeciwnie.
 	
 	
-## Architektura
+## Architektura:
 
 ![Azure Architecture](materials/architecture.png)
 
@@ -106,7 +106,7 @@ Użyłyśmy Flaska, ponieważ jest rekomendowany dla osób początkujących. Fla
 
  * Dokumentacja: https://azure.microsoft.com/en-us/pricing/details/app-service/windows/
  
-## Problemy
+## Problemy:
 
 Napotkałyśmy problem z działaniem App Services. Wcześniej po połączeniu aplikacji z kodem na GitHubie aplikacja działała poprawnie, w którymś momencie jednak zaczął pojawiać nam się błąd, którego nie byłyśmy w stanie rozwiązać. Diagnoztyka problemów dostępna na Portalu Azure nie działała.
 
