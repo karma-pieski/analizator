@@ -13,7 +13,7 @@
    * [Azure Cognitive Services Computer Vision Optical character recognition](#azure-cognitive-services-computer-vision-optical-character-recognition)
    * [Azure Web Apps](#azure-web-apps)
    * [Flask](#flask)
-8. [Problemy](#problemy)
+8. [Problem i jego rozwiązanie](#problem-i-jego-rozwiązanie)
 
 
 ## Opis projektu: 
@@ -106,9 +106,15 @@ Użyłyśmy Flaska, ponieważ jest rekomendowany dla osób początkujących. Fla
 
  * Dokumentacja: https://azure.microsoft.com/en-us/pricing/details/app-service/windows/
  
-## Problemy:
+## Problem i jego rozwiązanie:
 
 Napotkałyśmy problem z działaniem App Services. Wcześniej po połączeniu aplikacji z kodem na GitHubie aplikacja działała poprawnie, w którymś momencie jednak zaczął pojawiać nam się błąd, którego nie byłyśmy w stanie rozwiązać. Diagnostyka problemów dostępna na Portalu Azure nie działała.
 
 ![Error](materials/error.png)
 
+W rozwiązaniu pomogło nam narzędzie Diagnostic Logs. 
+
+Dokumentacja Diagnostic Logs: https://docs.microsoft.com/en-us/azure/app-service/troubleshoot-diagnostic-logs
+
+Po włączaniu rejestrowania diagnostyki dla aplikacji dostałyśmy komunikat, że nie można odnaleźć pakietu azure.cognitiveservices.vision.computervision.
+Po dodaniu go do pliku requirements.txt i automatycznej aktualizacji aplikacji strona zaczęła działać poprawnie.
