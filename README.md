@@ -42,13 +42,13 @@ https://youtu.be/XHffBHFIBww
 
 1. Aplikacja webowa została napisana przy użyciu frameworka Flask.
 	
-2. Kod w Pythonie do optycznego rozwpoznawania znaków został napisany przy użyciu Azure Cognitiveservices Vision Computervision.
+2. Kod w Pythonie do optycznego rozwpoznawania znaków został napisany przy użyciu Azure Cognitiveservices Vision Computervision. Nelży utworzyć zasób Computer Vision, by móc pobrać subscription key i endpoint.
 	
 3. Gotowy kod został zamieszczony w repozytorium na GitHubie.
 	
 4. Utworzony AppService został połączony z repozytorium na GitHubie (zakładka Deployment Center, czyli Centrum wdrożenia):
 
-![Połączenie AppService z repozytorium z GitHuba](images/appconect.png)
+![Połączenie AppService z repozytorium z GitHuba](materials/appconect.png)
 
 5. Po uruchomieniu strony aplikacji webowej użytkownik dodaje wybrane zdjęcie znajdujące się lokalnie na jego urządzeniu, następnie obraz jest przesyłany
 i wywoływujemy na nic OCR. Po przeanalizowaniu składu karmy, analizator decyduje, czy karma spełnia warunki do zakwalifikowania się do dobrego składu karmy czy wręcz przeciwnie.
@@ -56,7 +56,7 @@ i wywoływujemy na nic OCR. Po przeanalizowaniu składu karmy, analizator decydu
 	
 ## Architektura
 
-![Azure Architecture](images/architecture.png)
+![Azure Architecture](materials/architecture.png)
 
 
 ## Wybrany stos technologiczny:
@@ -64,7 +64,7 @@ i wywoływujemy na nic OCR. Po przeanalizowaniu składu karmy, analizator decydu
 
 ### Azure Cognitive Services Computer Vision 
 
-![ ](images/computervision.png)
+![ ](materials/computervision.png)
 
 Usługa sztucznej inteligencji służąca do analizowania zawartości obrazów i filmów wideo
 
@@ -75,7 +75,7 @@ Usługa sztucznej inteligencji służąca do analizowania zawartości obrazów i
 
 ### Azure Cognitive Services Computer Vision Optical Character Recognition
 
-![ ](images/ocr.png)
+![ ](materialss/ocr.png)
 
 Wyodrębniaj tekst drukowany i napisany odręcznie z obrazów oraz dokumentów o mieszanych językach i stylach pisania.
 
@@ -87,7 +87,7 @@ W swoim projekcie wykorzystałyśmy funkcje wyodrębniania tekstu dostępną w C
 	
 ### Azure App Service Web Apps
 
-![](images/webapps.png)
+![](materials/webapps.png)
 
 Usługa Azure App Service zapewnia szybsze tworzenie aplikacji dzięki jedynej w swoim rodzaju usłudze w chmurze, która umożliwia szybkie i proste tworzenie gotowych do użycia w przedsiębiorstwie aplikacji sieci Web i mobilnych dla dowolnej platformy i urządzenia oraz wdrażanie ich w skalowalnej i niezawodnej infrastrukturze chmury.
 
@@ -98,7 +98,7 @@ Użyłyśmy jej by w łatwy sposób móc utworzyć webową aplikacje, do której
 
 ### Flask
 
-![](images/flask.png)
+![](materials/flask.png)
 
 Flask to lekką platformę języka Python dla aplikacji internetowych, która zapewnia podstawowe informacje dotyczące routingu adresów URL i renderowania stron.
 
@@ -111,5 +111,5 @@ Użyłyśmy Flaska, ponieważ jest rekomendowany dla osób początkujących. Fla
 
 Napotkałyśmy problem z działaniem App Services. Wcześniej po połączeniu aplikacji z kodem na GitHubie aplikacja działała poprawnie, w którymś momencie jednak zaczął pojawiać nam się błąd, którego nie byłyśmy w stanie rozwiązać. Diagnoztyka problemów dostępna na Portalu Azure nie działała.
 
-![Error](images/error.png)
+![Error](materials/error.png)
 
