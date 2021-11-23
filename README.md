@@ -75,7 +75,7 @@ Usługa sztucznej inteligencji służąca do analizowania zawartości obrazów i
 
 ### Azure Cognitive Services Computer Vision Optical Character Recognition
 
-![ ](materialss/ocr.png)
+![ ](materials/ocr.png)
 
 Wyodrębniaj tekst drukowany i napisany odręcznie z obrazów oraz dokumentów o mieszanych językach i stylach pisania.
 
@@ -87,7 +87,7 @@ W swoim projekcie wykorzystałyśmy funkcje wyodrębniania tekstu dostępną w C
 	
 ### Azure App Service Web Apps
 
-![](materials/webapps.png)
+![](materials/appservice.png)
 
 Usługa Azure App Service zapewnia szybsze tworzenie aplikacji dzięki jedynej w swoim rodzaju usłudze w chmurze, która umożliwia szybkie i proste tworzenie gotowych do użycia w przedsiębiorstwie aplikacji sieci Web i mobilnych dla dowolnej platformy i urządzenia oraz wdrażanie ich w skalowalnej i niezawodnej infrastrukturze chmury.
 
