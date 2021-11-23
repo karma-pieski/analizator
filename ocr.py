@@ -37,7 +37,7 @@ def ocr_function(filename):
     
     message_good = " Ta karma jest odpowiednia, dobry wybór!"
     
-    keyword_list = ['cukry', 'zboż', 'pszenica', 'jęczmień', 'żyto', 'owies','pochodzenia zwierzęcego', 'odzwierzęce', 'pochodzenia roślinnego', 'pochodzenia wieprzowego']
+    keyword_list = ['pochodzenia drobiowego', 'zboż', 'pszenica', 'jęczmień', 'żyto', 'owies','pochodzenia zwierzęcego', 'odzwierzęce', 'pochodzenia roślinnego', 'pochodzenia wieprzowego']
 
     # Call the "GET" API and wait for it to retrieve the results
     while True:
