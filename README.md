@@ -51,7 +51,7 @@ https://youtu.be/XHffBHFIBww
 ![Połączenie AppService z repozytorium z GitHuba](materials/appconect.png)
 
 5. Po uruchomieniu strony aplikacji webowej użytkownik dodaje wybrane zdjęcie znajdujące się lokalnie na jego urządzeniu, następnie obraz jest przesyłany
-i wywoływujemy na nic OCR. Po przeanalizowaniu składu karmy, analizator decyduje, czy karma spełnia warunki do zakwalifikowania się do dobrego składu karmy czy wręcz przeciwnie.
+i wywoływujemy na nim OCR. Po przeanalizowaniu składu karmy, analizator decyduje, czy karma spełnia warunki do zakwalifikowania się do dobrego składu karmy czy wręcz przeciwnie.
 	
 	
 ## Architektura:
@@ -108,7 +108,7 @@ Użyłyśmy Flaska, ponieważ jest rekomendowany dla osób początkujących. Fla
  
 ## Problemy:
 
-Napotkałyśmy problem z działaniem App Services. Wcześniej po połączeniu aplikacji z kodem na GitHubie aplikacja działała poprawnie, w którymś momencie jednak zaczął pojawiać nam się błąd, którego nie byłyśmy w stanie rozwiązać. Diagnoztyka problemów dostępna na Portalu Azure nie działała.
+Napotkałyśmy problem z działaniem App Services. Wcześniej po połączeniu aplikacji z kodem na GitHubie aplikacja działała poprawnie, w którymś momencie jednak zaczął pojawiać nam się błąd, którego nie byłyśmy w stanie rozwiązać. Diagnostyka problemów dostępna na Portalu Azure nie działała.
 
 ![Error](materials/error.png)
 
