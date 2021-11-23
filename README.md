@@ -111,5 +111,5 @@ Użyłyśmy Flaska, ponieważ jest rekomendowany dla osób początkujących. Fla
 
 Napotkałyśmy problem z działaniem App Services. Wcześniej po połączeniu aplikacji z kodem na GitHubie aplikacja działała poprawnie, w którymś momencie jednak zaczął pojawiać nam się błąd, którego nie byłyśmy w stanie rozwiązać. Diagnoztyka problemów dostępna na Portalu Azure nie działała.
 
-![](images/error.png)
+![Error](images/error.png)
 
