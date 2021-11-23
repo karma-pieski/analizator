@@ -75,7 +75,6 @@ Usługa sztucznej inteligencji służąca do analizowania zawartości obrazów i
 
 ### Azure Cognitive Services Computer Vision Optical Character Recognition
 
-![ ](materials/ocr.png)
 
 Wyodrębniaj tekst drukowany i napisany odręcznie z obrazów oraz dokumentów o mieszanych językach i stylach pisania.
 
